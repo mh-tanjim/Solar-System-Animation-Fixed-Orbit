@@ -1,0 +1,277 @@
+/* =================== font link =================== */
+/* ------------------- for name */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sixtyfour+Convergence&display=swap');
+/* ------------------- for other */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Sixtyfour+Convergence&display=swap');
+/* ------------------- font link end -------------- */
+/* =================== body ======================= */
+body {
+    background: radial-gradient(circle, #001d3d, #000);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+/* =================== title ===================== */
+.title{
+    position: absolute;
+    width: 1200px;
+    height: 220px;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+.title h1{
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+.title h2{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    color: #fff ; 
+    text-align: center;
+}
+/* ---------------- title end -------------------- */
+/* ================ sun start ==================== */
+.sun {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, yellow, orange, red);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 80px rgba(255, 223, 0, 0.8);
+}
+.sun h2{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 40px;
+    text-align: center;
+    color: #4379F2;
+}
+/* --------------- sun end ---------------------- */
+/* ============== planet- name ================= */
+.planet-name {
+    position: absolute;
+    top: 15px; /* Adjust for positioning the name relative to planet */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+/* ================ Planets =================== */
+.planet {
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* ================ Earth with Moon ========== */
+.earth {
+    background: radial-gradient(circle, #0066ff, #003399);
+    width: 18px;
+    height: 18px;
+    animation: earth 20s linear infinite;
+    position: relative; /* Added to position moon relative to Earth */
+}
+
+/* ================ Adding the Moon =========== */
+.moon-orbit {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    transform: translate(-50%, -50%);
+    animation: rotate 3s linear infinite;
+}
+/* ================ moon ======================= */
+.moon {
+    position: absolute;
+    background: radial-gradient(circle, #dcdcdc, #aaa);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    animation: rotate 3s linear infinite;
+}
+
+/* --------------- moon end -------------------- */
+/* =============== Planets ===================== */
+.mercury {
+    background: radial-gradient(circle, #7b7a79, #3c3b3a);
+    width: 10px;
+    height: 10px;
+    animation: rotate 10s linear infinite;
+}
+.venus {
+    background: radial-gradient(circle, #f9d71c, #b88700);
+    width: 15px;
+    height: 15px;
+    animation: rotate 15s linear infinite;
+}
+
+.mars {
+    background: radial-gradient(circle, #d14a28, #a13d20);
+    width: 14px;
+    height: 14px;
+    animation: rotate 18s linear infinite;
+}
+
+.jupiter {
+    background: radial-gradient(circle, #edbb89, #d1905e);
+    width: 30px;
+    height: 30px;
+    animation: rotate 30s linear infinite;
+}
+
+.saturn {
+    background: radial-gradient(circle, #c6a471, #9b7352);
+    width: 28px;
+    height: 28px;
+    animation: rotate 35s linear infinite;
+}
+
+.uranus {
+    background: radial-gradient(circle, #87c1d1, #6a8f99);
+    width: 22px;
+    height: 22px;
+    animation: rotate 40s linear infinite;
+}
+
+.neptune {
+    background: radial-gradient(circle, #5571b0, #2f487d);
+    width: 20px;
+    height: 20px;
+    animation: rotate 45s linear infinite;
+}
+/* --------------- planets end ----------------- */
+/* =============== Orbit Sizes ================= */
+.mercury-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    width: 150px;
+    height: 150px;
+    animation: rotate 5s linear infinite;
+}
+
+.venus-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    width: 220px;
+    height: 220px;
+    animation: rotate 7s linear infinite;
+}
+
+.earth-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    width: 300px;
+    height: 300px;
+    animation: rotate 10s linear infinite;
+}
+
+.mars-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    width: 400px;
+    height: 400px;
+    animation: rotate 15s linear infinite;
+}
+
+.jupiter-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    width: 550px;
+    height: 550px;
+    animation: rotate 20s linear infinite;
+}
+
+.saturn-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    width: 700px;
+    height: 700px;
+    animation: rotate 25s linear infinite;
+}
+
+.uranus-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    width: 850px;
+    height: 850px;
+    animation: rotate 30s linear infinite;
+}
+
+.neptune-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    width: 950px;
+    height: 950px;
+    animation: rotate 35s linear infinite;
+}
+/* -------------- Orbit Sizes end -------------- */
+/* ================= Animations =================*/
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* ---------------- animation end -------------- */
+
+/* ------------------- The End ----------------- */
