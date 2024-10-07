@@ -62,12 +62,12 @@ body {
 /* ============== planet- name ================= */
 .planet-name {
     position: absolute;
-    top: 15px; /* Adjust for positioning the name relative to planet */
+    top: -28px; /* Adjust for positioning the name relative to planet */
     left: 50%;
     transform: translateX(-50%);
     color: white;
     font-family: "Montserrat", sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 }
 .moon-name {
@@ -84,22 +84,23 @@ body {
 .planet {
     position: absolute;
     border-radius: 50%;
-    top: 0;
+    top: 0%;
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
-
 /* ================ Earth with Moon ========== */
-.earth {
-    background: radial-gradient(circle, #0066ff, #003399);
-    width: 18px;
-    height: 18px;
-    animation: earth 20s linear infinite;
-    position: relative; /* Added to position moon relative to Earth */
-}
 
 /* ================ Adding the Moon =========== */
+.orbit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    
+}
 .moon-orbit {
     position: absolute;
     width: 40px;
@@ -110,15 +111,6 @@ body {
     border: 1px dashed rgba(255, 255, 255, 0.1);
     transform: translate(-50%, -50%);
     animation: rotate 3s linear infinite;
-}
-.orbit{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px dashed rgba(255, 255, 255, 0.1);
-
 }
 /* ================ moon ======================= */
 .moon {
@@ -149,6 +141,13 @@ body {
     animation: rotate 15s linear infinite;
 }
 
+.earth {
+    background: radial-gradient(circle, #0066ff, #003399);
+    width: 18px;
+    height: 18px;
+    animation: rotate 20s linear infinite;
+    position: relative; /* Added to position moon relative to Earth */
+}
 .mars {
     background: radial-gradient(circle, #d14a28, #a13d20);
     width: 14px;
