@@ -243,5 +243,72 @@ body {
 }
 
 /* ---------------- animation end -------------- */
+/* star */
+.star{
+    width: 50px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    animation: star 3s linear;
+}
+.star img{
+   width: 80px;
+    height: 18px;
+}
+.one{
+    animation: one 4s linear infinite;
+}
+.two{
+    animation: two 3s linear infinite;
+}
+.three{
+    animation: three 5s linear infinite;
+}
+.four{
+    animation: four 2s linear infinite;
+}
 
+@keyframes one {
+    0%{
+        left: 100%;
+        top: 0%;
+    }
+    100%{
+        left: 0%;
+        top: 40%;
+    }
+}
+@keyframes two {
+    0%{
+        left: 0%;
+        top: 0%;
+    }
+    100%{
+        left: 100%;
+        top: 80%;
+    }
+}
+@keyframes three {
+    0%{
+        left: 30%;
+        top: 100%;
+    }
+    100%{
+        left: 85%;
+        top: 0%;
+    }
+}
+@keyframes four {
+    0%{
+        left: 100%;
+        top: 100%;
+    }
+    100%{
+        left: 0%;
+        top: 0%;
+    }
+}
+
+
+/* star */
 /* ------------------- The End ----------------- */
